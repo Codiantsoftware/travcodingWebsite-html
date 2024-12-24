@@ -1,0 +1,267 @@
+// Footer Start
+.footer{
+    background-image: url(#{$imageurl}/footer-bg.webp);background-size: cover;
+    background-position: center;width: 100%;height: 100%;
+    &_top{
+        padding: 63px 0 75px;
+        &_left{
+            h2{
+                font-size: 60px;line-height: 1.2;margin-bottom: 20px;color: color(50);
+                span{
+                    color: #91929B;
+                }
+            }
+            p{
+                font-size: 20px;color: rgba(color(50),0.7);
+            }
+        }
+        &_center{
+            p{
+                font-size: 18px;line-height: 1.6;color: rgba(color(50),0.7);
+                a{
+                    color: rgba(color(50),0.7);
+                    &:hover{
+                        color: color(500);
+                    }
+                }
+            }
+            ul{
+                margin-top: 32px;padding-top: 30px;border-top: 1px solid rgba(color(50),0.1);
+                li{
+                    font-size: 18px;line-height: 1.6;color: rgba(color(50),0.7);
+                    em{margin-right: 12px;font-size: 14px;}
+                    &:not(:last-child){
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+        &_right{
+            .btn{
+                border-radius: 8px;width: 100%;max-width: 195px;
+            }
+            p{margin-top: 13px;font-size: 16px;line-height: 1.25;color: #595963;}
+        }
+    }
+    &_center{
+        border-top: 1px solid rgba(color(50),0.1);border-bottom: 1px solid rgba(color(50),0.1);
+        padding: 60px 0 50px;
+        &_title{
+            font-size: 20px;font-family: font(md);margin-bottom: 17px;line-height: 1.3;color: color(50);
+        }
+        &_links{
+            li{ font-size: 16px;line-height: 1.12;
+                &:not(:last-child){
+                    margin-bottom: 16px;
+                }
+                a{
+                    color: rgba(color(50),0.7);
+                    &:hover{
+                        color: color(50);
+                    }
+                    &.comingSoon{
+                        color: rgba(color(50),0.5);
+                        &:hover{
+                            color: color(50);
+                        }
+                    }
+                }
+            }
+        }
+        &_form{
+            .form-group{
+                position: relative;margin-bottom: 13px;
+                .form-control{
+                    border-radius: 8px;padding: 14px 105px 14px 20px;height: 50px;
+                    background-color: rgba(color(50),0.1);border: 0;
+                    color: color(50);
+                    &:focus{
+                        outline: 0;box-shadow: none;
+                    }
+                    &::placeholder{
+                        color: rgba(color(50),0.5);
+                    }
+                }
+                .btn{
+                    position: absolute;top: 0;right: 0;border-top-left-radius: 0;border-bottom-left-radius: 0;
+                    border-top-right-radius: 8px;border-bottom-right-radius: 8px;border: 0;
+                }
+            }
+            .form-check{
+                &-input{
+                    &[type=checkbox]{
+                        ~.form-check-label{
+                            font-size: 14px;line-height: 1.42;color: rgba(color(50),0.5);
+                        }
+                    } 
+                }
+            }
+        }
+        &_info{
+            margin-top: 35px;
+            ul{
+                margin-top: 10px;
+                li{ 
+                    font-size: 16px;line-height: 1.12;
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                    span{
+                        color: rgba(color(50),0.7); margin-right: 3px;
+                    }
+                    a{
+                        color: color(50);
+                    }
+                }
+            }
+        }
+    }
+    &_bottom{
+        padding: 30px 0 27px;
+        p{
+            font-size: 16px;line-height: 1.3;color: rgba(color(50),0.7);
+        }
+        li{
+            position: relative;font-size: 16px;line-height: 1.3;opacity: 0.7;
+            &:not(:last-child){
+                margin-right: 16px;
+                &::after{
+                    position: absolute;top: 50%;right: -8px;width: 2px;height: 15px;
+                    background-color: rgba(color(50),0.35);content: "";
+                    transform: translateY(-50%);
+                }
+            }
+            a{
+                color: rgba(color(50),0.7);
+                &:hover{
+                    color: color(50);
+                }
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        &_top{
+            &_right{
+                .btn{
+                    height: 54px;
+                }
+            }
+        }
+    }
+    @media(max-width: 1599px){
+        &_top{
+            padding: 50px 0 60px;
+            &_left{
+                h2{
+                    font-size: 50px;margin-bottom: 15px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            &_center{
+                p{
+                    font-size: 16px;
+                }
+                ul{
+                    margin-top: 25px;padding-top: 25px;
+                    li{
+                        font-size: 16px;
+                        em{margin-right: 10px;font-size: 13px;}
+                        &:not(:last-child){
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            &_right{
+                p{margin-top: 10px;font-size: 15px;}
+            }
+        } 
+        &_center{
+            padding: 50px 0 40px;
+            &_title{
+                font-size: 18px;margin-bottom: 12px;
+            }
+            &_links{
+                li{ font-size: 15px;
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &_form{
+                .form-group{
+                    margin-bottom: 10px;
+                }
+            }
+            &_info{
+                margin-top: 25px;
+                ul{
+                    li{ 
+                        font-size: 15px;
+                        &:not(:last-child){
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        &_bottom{
+            padding: 20px 0;
+            p{
+                font-size: 15px;
+            }
+            li{
+                font-size: 15px;
+            }
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        &_top{
+            padding: 40px 0;
+            &_left{
+                h2{
+                    font-size: 42px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            &_center{
+                p{
+                    font-size: 15px;
+                }
+                ul{
+                    margin-top: 20px;padding-top: 20px;
+                    li{
+                        font-size: 15px;
+                    }
+                }
+            }
+        } 
+        &_center{
+            padding: 40px 0 30px;
+            &_form{
+                .form-group{
+                    .form-control{
+                        padding: 10px 100px 10px 15px;height: 45px;
+                    }
+                }
+            }
+            &_info{
+                margin-top: 20px;
+            }
+        }
+        &_bottom{
+            padding: 15px 0;
+            p{
+                font-size: 14px;
+            }
+            li{
+                font-size: 14px;
+            }
+        }
+    }
+}
+// Footer End

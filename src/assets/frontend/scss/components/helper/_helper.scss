@@ -1,0 +1,159 @@
+body {
+  color: color(800);
+  font-family: font(rg);
+  background-color: color(50);
+  font-size: 16px;
+  line-height: 1.375;
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+
+  &:focus-visible {
+    outline: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+  &-track {
+    background: #edf1ed;
+  }
+
+  &-thumb {
+    background: color(500);
+
+    &:hover {
+      background: color(500);
+    }
+  }
+}
+//column spacing
+.g-20{
+  --bs-gutter-y:20px;
+  --bs-gutter-x:20px;
+  @include media-breakpoint-down(lg){
+    --bs-gutter-y:15px;
+    --bs-gutter-x:15px;
+  }
+}
+
+
+// container start
+.container {
+  @media(min-width: 1600px) {
+    max-width: 1576px;
+  }
+
+  @media(max-width: 1599px) {
+    max-width: 100%;
+  }
+
+}
+// container end
+// font family
+.font-md {
+  font-family: font(md)  !important;
+}
+.font-bd {
+  font-family: font(bd)  !important;
+}
+.fs-20 {
+  font-size: 20px !important;
+  line-height: 1.5;
+}
+.fs-18 {
+  font-size: 18px !important;
+  line-height: 1.445;
+}
+@include media-breakpoint-down(xxl) {
+  .fs-20 {
+    font-size: 18px !important;
+  }
+  .fs-18 {
+    font-size: 16px !important;
+  }
+}
+@include media-breakpoint-down(xl) {
+  .fs-20 {
+    font-size: 16px !important;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .fs-18, .fs-20  {
+    font-size: 14px !important;
+  }
+}
+// font family
+// common Padding
+.py-80{
+  padding: 80px 0;
+  @include media-breakpoint-down(xxl){
+    padding: 60px 0;
+  }
+  @include media-breakpoint-down(xl){
+    padding: 50px 0;
+  }
+  @include media-breakpoint-down(lg){
+    padding: 30px 0;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 25px 0;
+  }
+}
+// common Padding
+// animation keyframes
+@keyframes bellSwing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveArrowleft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px); /* Adjust distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveArrowRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px); /* Adjust distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.my-60{
+  margin: 60px 0;
+}

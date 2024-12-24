@@ -1,0 +1,101 @@
+// Header Start
+.header{
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all .3s ease;
+    background-color: color(50);
+    box-shadow: 1px 3px 3px rgba(color(900),0.1);
+    .navbar {
+        padding: 20px 0;
+        .nav{
+            &-item{
+                &:not(:last-child){
+                    margin-right: 32px;
+                }
+                &.dropdown{
+                    padding-right: 20px;
+                }
+            }
+            &-link{
+                padding: 0;font-size: 18px;color: color(800);
+                &.active,&:hover{
+                    font-family: font(md);
+                }
+            }
+        }
+        .dropdown{
+            &-toggle{
+                &::after{
+                    border: 0;content: "\e90f";position: absolute;top: 50%;right: 0;
+                    font-size: 9px;font-family: 'icomoon';transform: translateY(-50%);
+                    transition: all 0.3s;
+                }
+                &.show{
+                    &::after{
+                        transform: translateY(-50%) rotate(180deg);
+                    } 
+                }
+            }
+            &-menu {
+                border: 0;box-shadow: 0 0 10px rgba(color(900),0.1);
+            }
+            &-item{
+                font-size: 18px;
+                &:hover{
+                    background-color: rgba(color(500),0.1);
+                }
+            }
+        }
+    }
+    &_right{
+        &_link{
+            font-size: 16px;font-family: font(md);color: color(500);border-radius: 25px;
+            border: 1px solid color(500);padding:15px 23px; height: 50px;
+            em{
+                margin-right: 10px;
+            }
+            &:hover{
+                background-color: color(500);color: color(50);
+            }
+        }
+    }
+    @media(max-width:1599px){
+        .navbar {
+            padding: 15px 0;
+        }  
+    }
+    @include media-breakpoint-down(xxl){
+        .navbar {
+            .nav{
+                &-item{
+                    &:not(:last-child){
+                        margin-right: 25px;
+                    }
+                    &.dropdown{
+                        padding-right: 15px;
+                    }
+                }
+                &-link{
+                    font-size: 16px;
+                }
+            }
+            .dropdown{
+                &-toggle{
+                    &::after{
+                        font-size: 8px;
+                    }
+                }
+                &-item{
+                    font-size: 16px;
+                }
+            }
+        }
+        &_right{
+            &_link{
+                font-size: 15px;padding:12px 20px; height: 45px;
+            }
+        }
+    }
+}
+// Header End
