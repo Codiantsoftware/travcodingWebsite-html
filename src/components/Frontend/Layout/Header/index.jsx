@@ -36,11 +36,11 @@ export function Header() {
                                 <Nav.Item>
                                     <Nav.Link as={Link} to="#!">About Us</Nav.Link>
                                 </Nav.Item>
-                                <NavDropdown title="Solutions" id="collapsible-nav-dropdown">
+                                <NavDropdown title="Solutions" id="collapsible-nav-dropdown" show={false}>
                                     <NavDropdown.Item as={Link} to="#!">Solutions 1</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="#!">Solutions 2</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="Products" id="collapsible-nav-dropdown">
+                                <NavDropdown title="Products" id="collapsible-nav-dropdown" show={false}>
                                     <NavDropdown.Item as={Link} to="#!">Products 1</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="#!">Products 2</NavDropdown.Item>
                                 </NavDropdown>

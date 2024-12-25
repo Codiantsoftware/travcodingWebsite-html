@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "image": "team-1.webp",
+      "name": "Matthew Mundroina",
+      "position": "Director",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 2,
+      "image": "team-2.webp",
+      "name": "Ben Smith",
+      "position": "Structural Engineer",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 3,
+      "image": "team-3.webp",
+      "name": "Aaron Sexton",
+      "position": "Director",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 4,
+      "image": "team-4.webp",
+      "name": "Ben Smith",
+      "position": "Engineer",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 5,
+      "image": "team-5.webp",
+      "name": "Alan Robertson",
+      "position": "Construction Management",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 6,
+      "image": "team-6.webp",
+      "name": "Jacob Sutton",
+      "position": "Senior Engineering",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    }
+]
+  
